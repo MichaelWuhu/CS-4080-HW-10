@@ -1,0 +1,14 @@
+class Person {
+  init(name) {
+    this.name = name;
+  }
+
+  greet() {
+    return "Hello, " + this.name + "!";
+  }
+}
+
+var person = Person("Michael");
+print person.greet();
+person.favorite = "programming";
+print person.favorite;

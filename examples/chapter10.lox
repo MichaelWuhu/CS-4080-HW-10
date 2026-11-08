@@ -1,0 +1,31 @@
+// Chapter 10: functions, returns, recursion, closures, and native functions.
+
+fun greet(name) {
+  print "Hello, " + name + "!";
+}
+
+fun add(a, b) {
+  return a + b;
+}
+
+fun fib(n) {
+  if (n <= 1) return n;
+  return fib(n - 2) + fib(n - 1);
+}
+
+fun makeCounter() {
+  var count = 0;
+  fun increment() {
+    count = count + 1;
+    return count;
+  }
+  return increment;
+}
+
+greet("Lox");
+print add(2, 3);
+print fib(6);
+var counter = makeCounter();
+print counter();
+print counter();
+print clock() > 0;

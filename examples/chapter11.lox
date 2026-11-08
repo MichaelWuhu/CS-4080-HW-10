@@ -1,0 +1,25 @@
+// Chapter 11: lexical scope resolution.
+
+var a = "global";
+{
+  fun showA() {
+    print a;
+  }
+
+  showA();
+  var a = "block";
+  showA();
+}
+
+fun makeCounter() {
+  var count = 0;
+  fun increment() {
+    count = count + 1;
+    return count;
+  }
+  return increment;
+}
+
+var counter = makeCounter();
+print counter();
+print counter();

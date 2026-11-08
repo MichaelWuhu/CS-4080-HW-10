@@ -1,0 +1,8 @@
+print "before";
+
+/* Outer comment starts.
+   /* This comment is nested. */
+   Outer comment continues.
+*/
+
+print "after";

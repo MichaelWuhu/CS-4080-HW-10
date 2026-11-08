@@ -1,0 +1,3 @@
+var completed = true;
+assert completed;
+print "The assertion passed.";

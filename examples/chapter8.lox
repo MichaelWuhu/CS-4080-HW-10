@@ -1,0 +1,11 @@
+var outside = "outside";
+print outside;
+
+{
+  var inside = "inside";
+  print inside;
+  outside = "changed";
+  print outside;
+}
+
+print outside;
